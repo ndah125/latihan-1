@@ -24,9 +24,53 @@ table,th,td{
 tr{
   text-align: center;
 }
+label{font-size: 14px;font-weight: bold;}
+input[type=number],input[type=password]{
+  width: 100%;
+  padding:12px 20px;
+  border-radius: 5px;
+  margin:8px0;
+  color: cadetblue;
+  background-color: rgb(221, 207, 15);
+  font-size: 16px;
+}
+input[type=date]{
+  width: 100%;
+  padding:12px 20px;
+  border-radius: 5px;
+  margin:8px0;
+  color: cadetblue;
+  background-color: rgb(221, 207, 15);
+  font-size: 16px;
+}
+input[type=time]{
+  width: 100%;
+  padding:12px 20px;
+  border-radius: 5px;
+  margin:8px0;
+  color: cadetblue;
+  background-color: rgb(221, 207, 15);
+  font-size: 16px;
+}
+input[type=text]{
+  width: 100%;
+  padding:12px 20px;
+  border-radius: 5px;
+  margin:8px0;
+  color: cadetblue;
+  background-color: rgb(221, 207, 15);
+  font-size: 16px;
+}
+select{
+  width: 100%;
+  padding:12px 20px;
+  border-radius: 5px;
+  margin:8px0;
+  color: cadetblue;
+  background-color: rgb(221, 207, 15);
+  font-size: 16px;
 
-
-
+}
 
 </style>
 <body>
@@ -101,8 +145,37 @@ tr{
   </table>
 
 
-
   <button onclick="console.log('hello');">Press me</button>
   <script defer type="text/javascript" src="/main.js"></script>
+
+<form>
+<label> Form Text </label>
+  <input type="text"mame ="Txalamat" value="isi data diri"id="txalamat" class="txalamat">
+<label>Form Number</label>
+  <input type="number">
+<label>Form TGL</label>
+  <input type="date">
+<label>Form Waktu</label>
+  <input type="time" name="time">
+<label>Form Pilihan</label>
+  <input type="radio" name="jnsk">laki laki
+  <input type="radio" name="jnsk">Perempuan
+<br>
+  <input type="checkbox">berenang
+  <input type="checkbox">sepak bola
+  <input type="checkbox">badminton
+  <input type="checkbox">Tinju
+<label>Form Pilihan Lain</label> 
+<select>
+<option > Silahkan Pilih Warna </option>
+ <option>biru</option>
+ <option>hijau</option>
+ <option>merah</option>
+ <option>hitam</option>
+</select>
+<label>form password</label>
+<input type="password" name="txpass">
+<input type="submit"value="tombol">
+</form>
 </body>
 </html>
